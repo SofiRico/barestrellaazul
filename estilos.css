@@ -1,0 +1,62 @@
+*{margin: 0; padding: 0;}
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }  
+body{ background-color:rgba(146, 234, 237, 0.756) ; font-family: "Kanit", sans-serif;}
+header{ display: flex; align-content: center; align-items: center; justify-content: space-between; background-color: cadetblue; text-align: center;flex-flow: wrap;}
+main{ padding: 10px;}
+nav{text-align: center;}
+.icono{ display: none;}
+ul{display: flex; list-style: none;}
+nav a{ color: rgb(7, 18, 11);padding: 10px; margin: 5px; border-radius: 50px; text-decoration: none;}
+.logo{ max-width: 100px; border-radius: 100%; padding: 10px;}
+.banner{ width: 100%;}
+.caja1{ width: 24%; padding-left: 1%;}
+.foto {width: 100%;}
+.caja2{ width: 24%; padding-left: 1%; text-align: center; align-content: center;}
+.caja3{ width: 24%; padding-left: 1%}
+.contenedor{ display: flex; flex-flow:wrap ;}
+nav a:hover{ color: black; background-color: rgb(2, 100, 47); }
+.redes{ display: flex; justify-content: center;}
+.social{ width: 40px; height: auto; padding: 5px;}
+footer{ margin: 20px;}
+a p div{ align-items: left;}
+.mg{ color: rgb(157, 211, 255); background-color: rgb(6, 46, 82); text-align: center; margin-bottom: 10px;}
+.menu{ display: grid; grid-template-columns: 70% 30%;}
+.titulo{ color: crimson; text-decoration: dotted;}
+.comida { width: 100px; height: auto; padding: 10px;}
+.arriba{ width: 20px; height: auto; position: fixed; bottom: 10px; right: 10px;}
+.reserva{ width: 100%; height: auto;}
+.reserv{ display: grid; grid-template-columns: 59% 40%; align-items: center; text-align: center; gap: 1%;}
+.texto{ font-size: 20px;}
+.hh{ display: grid; grid-template-columns: 49% 50%; gap: 1%; align-items: center; text-align: center; font-size: 30px;}
+.flyer{ width: 100%; height: auto;}
+.act{ display: grid; grid-template-columns: 49% 50%; gap: 1%;align-items: center; text-align: center; font-size: 30px;}
+.caja2 p{align-items: center; background-color:rgba(67, 191, 195, 0.456) ;}
+.slider { position: relative; max-width: 600px;  margin: auto;  overflow: hidden; margin-bottom: 15px;}
+.slide { display: none; width: 100%;}
+.active { display: block;}
+.prev, .next { position: absolute; top: 50%; transform: translateY(-50%); font-size: 24px; background-color: rgba(0,0,0,0.5); color: white; padding: 10px; cursor: pointer;}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+/* Celulares */
+@media (max-width:480px) {
+  header{ display: block;}
+  nav{display: none; }
+  nav a{display: block;  }
+  .icono{ display: block; position: absolute; top: 10px; right: 10px; }
+  .mostrar{display: block;}
+  ul{ display: block; align-items: center;}
+ .social{ width: 20px; height: auto;}
+ .contenedor{ display: block}
+ .caja1{ width: 99%; padding: 1%;}
+ .caja2{ width: 99%; padding: 1%;}
+ .caja3{ width: 99%; padding: 1%;}
+ .reserv{display: block;}
+ .hh{display: block;}
+ .act{display: block;}
+}
