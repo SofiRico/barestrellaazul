@@ -41,9 +41,32 @@ a p div{ align-items: left;}
 .prev, .next { position: absolute; top: 50%; transform: translateY(-50%); font-size: 24px; background-color: rgba(0,0,0,0.5); color: white; padding: 10px; cursor: pointer;}
 .prev { left: 10px; }
 .next { right: 10px; }
-.cuestionario{ margin: 40px;}
-input { background-color: rgb(140, 207, 198);}
-button{background-color: rgb(140, 207, 198); width: 50px; height: 20px;}
+.cuestionario{ margin: 40px; display: flex; gap: 20px;}
+.formulario input{
+        width: 100%;
+        padding: 5px;
+        border-radius: 8px;
+        border: none;
+        color: #000000;
+        font-size: 20px;
+        align-items: center;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+        background-color: rgb(140, 207, 198);
+      }
+      
+      .formulario button {
+        padding: 5px;
+        color: #111;
+        font-weight: bold;
+        font-size: 25px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+        background-color: rgb(140, 207, 198);
+      }
 
 
 /* Celulares */
