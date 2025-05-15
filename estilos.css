@@ -74,7 +74,7 @@ a p div{ align-items: left;}
   header{ display: block;}
   nav{display: none; }
   nav a{display: block;  }
-  .icono{ display: block; position: absolute; top: 10px; right: 10px; text-decoration:none;}
+  .icono{ display: block; position: absolute; top: 10px; right: 10px; text-decoration:none; color: #111}
   .mostrar{display: block;}
   ul{ display: block; align-items: center;}
  .social{ width: 20px; height: auto;}
