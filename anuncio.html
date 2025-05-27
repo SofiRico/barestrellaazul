@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio Bar Estrella Azul</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .ad-container {
+            display: flex;
+            flex-direction: row; /* Logo a la izquierda, texto a la derecha */
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(13, 69, 124);
+            border: 2px solid #ddd;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(185, 186, 188, 0.253);
+            width: 728px;
+            height: 120px;
+            text-align: left;
+        }
+
+        .logo {
+            max-width: 120px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .text-container {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #f1f6fd;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Efecto de transición */
+        }
+
+        .cta:hover {
+            background-color: #005f7a; /* Cambio a un azul más oscuro al pasar el cursor */
+        }
+
+        @media (max-width: 600px) {
+            .ad-container {
+                width: 300px;
+                height: 600px;
+                flex-direction: column; /* Cambio a columna en móviles */
+                align-items: center;
+                text-align: center;
+            }
+
+            .logo {
+                max-width: 40%;
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+
+            .text-container {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ad-container">
+        <img src="https://i.ibb.co/KxFkXxrp/logo.webp" alt="Logo Bar Estrella Azul" class="logo">
+        <div class="text-container">
+            <h2>¡Bienvenido a Bar Estrella Azul!</h2>
+            <p>Compartí cada plato con nosotros para brillar un poquito mas cada día</p>
+            <a href="https://sofirico.github.io/barestrellaazul/" class="cta">Visitanos</a>
+        </div>
+    </div>
+
+</body>
+</html>
