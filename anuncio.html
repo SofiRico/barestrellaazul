@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: rgb(255, 255, 255);
+            background-color: #f5f5dc;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,47 +20,47 @@
             flex-direction: row; /* Logo a la izquierda, texto a la derecha */
             align-items: center;
             justify-content: space-between;
-            background-color: rgb(13, 69, 124);
-            border: 2px solid #ddd;
+            background-color: #0c1445;
+            border: 2px solid #a0a9e4;
             padding: 20px;
-            box-shadow: 2px 2px 10px rgba(185, 186, 188, 0.253);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             width: 728px;
             height: 120px;
             text-align: left;
+            color: #f3ffff;
         }
 
         .logo {
-            max-width: 120px;
+            max-width: 22%;
             height: auto;
             margin-right: 20px;
         }
 
         .text-container {
             flex-grow: 1;
-            text-align: center;
         }
 
         h2 {
             font-size: 18px;
             margin: 5px 0;
-            text-align: center;
         }
 
         p {
             font-size: 14px;
             margin-bottom: 10px;
-            color: #f1f6fd;
+            color: #f3ffff;
         }
 
         .cta {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #008CBA;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease; /* Efecto de transición */
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #008CBA;
+			color: white;
+			text-decoration: none;
+			font-size: 16px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+			height: 20px;
         }
 
         .cta:hover {
@@ -77,13 +77,22 @@
             }
 
             .logo {
-                max-width: 40%;
-                margin-bottom: 10px;
+                max-width: 85%;
+                margin-top: 88px;
                 margin-right: 0;
             }
 
             .text-container {
-                text-align: center;
+               	text-align: center;
+        		display: flex;
+				flex-flow: wrap;
+				justify-content: center;
+				align-content: flex-start;
+            }
+
+            .anuncio{
+                width: 300px;
+                height: 600px;
             }
         }
     </style>
@@ -91,11 +100,11 @@
 <body>
 
     <div class="ad-container">
-        <img src="https://i.ibb.co/KxFkXxrp/logo.webp" alt="Logo Bar Estrella Azul" class="logo">
+        <img src="https://i.ibb.co/KxFkXxrp/logo.webp" alt="Logo Estrella Azul" class="logo">
         <div class="text-container">
             <h2>¡Bienvenido a Bar Estrella Azul!</h2>
             <p>Compartí cada plato con nosotros para brillar un poquito mas cada día</p>
-            <a href="https://sofirico.github.io/barestrellaazul/" class="cta">Visitanos</a>
+            <a href="https://sofirico.github.io/barestrellaazul/" target="_blank" class="cta">Visitanos</a>
         </div>
     </div>
 
