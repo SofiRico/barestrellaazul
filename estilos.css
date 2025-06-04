@@ -67,6 +67,46 @@ a p div{ align-items: left;}
         box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
         background-color: rgb(140, 207, 198);
       }
+    .compu{
+        width: 728px; 
+        height: 90px;
+      }
+    .anuncio {
+        width: 728px;
+        height: 120px;
+        border: none;
+        display: block;
+        margin: auto;
+     }
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal img {
+        max-width: 90%;
+        max-height: 80vh;
+    }
+
+    .modal:target {
+        display: flex;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+        text-decoration: none;
+        color: #fff;
+    }
 
 
 /* Celulares */
@@ -85,4 +125,6 @@ a p div{ align-items: left;}
  .reserv{display: block;}
  .hh{display: block;}
  .act{display: block;}
+ .compu{width: 300px; height: 600px; }
+ .anuncio {width: 300px; height:600px;}
 }
