@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="estilos.css" rel="stylesheet">
+  <title>Presentación | Bar Estrella Azul</title>
+</head>
+<body>
+  <header>
+    <div class="uno">
+        <img class="logo" src="https://i.ibb.co/KxFkXxrp/logo.webp" alt="logo" >
+        <h1>Bienvenidos a Bar Estrella Azul</h1>
+        <a href="#" class="icono" onclick="MiFuncion()"> <i class="fa fa-bars" aria-hidden="true"></i> </a>
+    </div>
+        <nav id="navegador">
+            <ul>
+                <li><a href="#pensamiento"> PENSAMIENTO </a></li>
+                <li><a href="#wireframe"> WIREFRAME </a></li>
+                <li><a href="#diseño"> DISEÑO </a></li>
+                <li><a href="#resultado"> RESULTADO </a></li>
+                <li><a href="#presupuesto"> PRESUPUESTO </a></li>
+            </ul>
+        </nav>
+  </header>
+  <main>
+    <h2 id="pensamiento"> PENSAMIENTO </h2>
+    <div class="main">
+        <div  class="slider">
+            <img class="slide active" src="https://i.ibb.co/vxdvGQJ7/billiards-1677103-1280.jpg" alt="banner" >
+            <img class="slide" src="https://i.ibb.co/5ggjmRV7/tavern-29-happy-hour-copia.jpg" alt="tavern-29-happy-hour-copia"> 
+            <img class="slide" src="https://i.ibb.co/5X6dyBFM/63877a124f424-copia.jpg" alt="63877a124f424-copia">
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+        <div class="texto">
+            <p> Un espacio donde el espacio y las estrellas se unen con la experiencia sensorial de la comida. 
+                Es un local,  el cual durante el almuerzo, merienda y cena es un restaurante para toda la familia. 
+                Durante la noche, se transforma en un bar para tomar unos tragos y bailar con tus amigos.  </p>
+        </div>
+    </div>
+
+    <h2 id="wireframe"> WIREFRAME </h2>
+    <div class="frame">
+        <img class="compu" src="https://i.ibb.co/3mD50LTn/WIREFRAME-COMPU.jpg" alt="WIREFRAME-COMPU" >
+        <div class="celu-frame">
+            <img class="celu" src="https://i.ibb.co/9mXPM2qG/WIREFRAME-CELULAR-Rico.jpg" alt="WIREFRAME-CELULAR-Rico" >
+            <img class="celu" src="https://i.ibb.co/1Jtb4J3r/WIREFRAME-CELULAR-Rico-1.jpg" alt="WIREFRAME-CELULAR-Rico-1" >
+        </div>
+    </div>
+
+    <h2 id="diseño"> DISEÑO </h2>
+    <div class="colores"> 
+        <img src="https://i.ibb.co/N6F7cqN3/dise-o-1.png">
+        <img src="https://i.ibb.co/Y7sbz0Tv/dise-o-2.png">
+        <img src="https://i.ibb.co/chk4jjWw/dise-o-3.png">
+    </div>
+    
+    <h2 id="resultado"> RESULTADO </h2>
+    <div >
+            <img class="screen" src="https://i.ibb.co/V0r4GzqH/image.png" alt="banner" >
+            <img class="screen" src="https://i.ibb.co/VWpTL9Yh/image.png">
+            <img class="screen" src="https://i.ibb.co/DmSF99b/image.png">
+    </div>
+    <h2 id="presupuesto"> PRESUPUESTO </h2>
+    <h4> Diseño de Información </h4>
+    <ul class="precio">
+        <li><strong> Investigación y planificación:</strong> USD 20 </li>
+        <li><strong> Redacción de contenido (SEO + UX):</strong> USD 30 </li>
+    </ul>
+    <h4> Diseño Visual y desarrollo </h4>
+    <ul class="precio">
+        <li><strong> Identidad visual (logo, paleta, tipografía):</strong> USD 50 </li>
+        <li><strong> Wireframe:</strong> USD 10 </li>
+        <li><strong> Diseño responsivo:</strong> USD 30 </li>
+        <li><strong> Maquetación HTML/CSS:</strong> USD 50 </li>
+        <li><strong> JavaScript básico (interacciones simples):</strong> USD 25 </li>
+        <li><strong> Optimización técnica (SEO básico, accesibilidad):</strong> USD 20 </li>
+    </ul>
+    <h4> Hosting y Publicación </h4>
+    <ul class="precio">
+        <li><strong> Dominio personalizado (opcional):</strong>  USD 10/año </li>
+        <li><strong> Hosting:</strong> USD 0 (GitHub Pages gratuito) </li>
+    </ul>
+    <h4> Total estimado: USD 235 </h4>
+</main>
+  <footer>
+    <p>Diseñado por Sofi Rico · 2025 · Profesor: Wenceslao Zavala</p>
+    <a class="sitio" href="https://sofirico.github.io/barestrellaazul/">SITIO</a>
+  </footer>
+  <script>
+        function MiFuncion() {
+        var x = document.getElementById("navegador");
+        if (x.className === "") {
+        id="navegador"
+        x.className += "mostrar";
+        } else {
+        x.className = "";
+        }
+        }
+        let index = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function showSlide(n) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === n) slide.classList.add("active");
+            });
+        }
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+    </script>
+</body>
+</html>
