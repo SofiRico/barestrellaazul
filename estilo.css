@@ -108,7 +108,7 @@
       color: #aee4ff;
       font-weight: 600;
     }
-    .sitio {text-decoration: none; color: #7ec8e3;}
+    .sitio {text-decoration: none; color: #7ec8e3; background-color: #273d5c; padding: 5px; margin-bottom: 10px; align-items: center;}
 
 /* Celulares */
 @media (max-width:480px) {
